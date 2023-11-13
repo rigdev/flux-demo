@@ -1,0 +1,9 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: rig-operator
+  namespace: rig-system
+spec:
+  chart:
+    spec:
+      version: 0.1.11-rc1

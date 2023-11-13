@@ -1,0 +1,10 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: rig-platform
+  namespace: rig-system
+spec:
+  values:
+    ingress:
+      enabled: true
+      host: my-rig.com
